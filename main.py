@@ -18,7 +18,7 @@ URLS = [
 SMTP_SERVER = "smtp.gmail.com"  # Change if using a different email provider
 SMTP_PORT = 587
 EMAIL_SENDER = "aisc.finance.ucd@gmail.com"
-EMAIL_PASSWORD = "munnethlovescrystal"  # Use an app password for security
+EMAIL_PASSWORD = "hsys vmzi maku ziyy"  # Use an app password for security
 EMAIL_RECEIVER = "cgarciapablo@ucdavis.edu"
 
 # File to store previous page hashes
@@ -85,15 +85,15 @@ def check_for_updates():
             if url in hashes and hashes[url] != new_hash:
                 print(f"Change detected at {url}")
                 send_email(url)
+            else:
+                print("no change")
             new_hashes[url] = new_hash
 
     save_hashes(new_hashes)
 
 # Schedule the script to run daily
-schedule.every().day.at("14:02").do(check_for_updates)  # Runs daily at 8 AM
+schedule.every().day.at("15:53").do(check_for_updates)  # Runs daily at 8 AM
 
 if __name__ == "__main__":
     check_for_updates()  # Run once at startup
-    while True:
-        schedule.run_pending()
-        time.sleep(60)  # Check every minute if it's time to run
+
