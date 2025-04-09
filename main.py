@@ -18,7 +18,7 @@ URLS = [
 SMTP_SERVER = "smtp.gmail.com"  # Change if using a different email provider
 SMTP_PORT = 587
 EMAIL_SENDER = "aisc.finance.ucd@gmail.com"
-EMAIL_PASSWORD = "hsys vmzi maku ziyy"  # Use an app password for security
+EMAIL_PASSWORD =   # Use an app password for security
 EMAIL_RECEIVER = "cgarciapablo@ucdavis.edu"
 
 # File to store previous page hashes
